@@ -1,0 +1,88 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(2, 69, 2);
+}
+
+#logo {
+    width: 120px; /* define a lagura */
+    height: auto; /* mantém a proporção */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: inherit;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    color: white;
+}
+
+.imagem img {
+    max-width: 400px;
+    height: auto;
+}
+
+.info {
+    text-align: center;
+}
+
+.btn-veja {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+#fotoPrincipal {
+    width: 120px;
+}
