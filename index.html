@@ -3,41 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Jurassic Experience</title>
     <link rel="stylesheet" href="./css/estilo.css">
-
-    <title>Dainossauro</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="./images/logo1.png" id="logo">          
-            <h2>Jurassic Adventure</h2>
-        </div>
-        <nav>
+        <nav class="conteudoHeader">
+            <div id="logo">
+                <img src="./images/logoInGen.webp" id="logoFoto">
+            </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Jurassic Park</a></li>
-                <li><a href="#">Jurassic Word</a></li>
-                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="jurassicParque.html">JURASSIC PARQUE</a></li>
+                <li><a href="jurrassicWord.html">JURASSIC WORD</a></li>
+                <li><a href="sobreNos.html">SOBRE NÓS</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <div class="imagem">
-            <img src="./images/dinossauroJurrascParque.png" alt="Dinossauro">
-        </div>
-        <div class="info">
-            <h2>JURASSIC PARK</h2>
-            <h1>INDOMINUS REX</h1>
-            <p>Os maiores predadores do mundo!</p>
-            <button class="btn-veja">VEJA</button>
-        </div>
-    </main>  
-    <footer>
-        <p>© 2025 Jurassic adventure. Todos os direitos preservados</p>
-    </footer>
-    
+        <section class="secao-heroi">
+            <div class="conteudo-heroi">
+                <div class="imagem-heroi">
+                    <img src="./images/fotoPrincipal.jpg" alt="Quarteto Fantástico">
+                </div>
+                <div class="texto-heroi">
+                    <div class="logo-empresa">International Genetic Technologies</div>
+                    <h1>Jurassic Experience</h1>
+                    <p class="subtitulo">O PASSADO ESTÁ VIVO 🦖.</p>
+                    <p class="lancamento">Compre o seu ingresso</p>
+                    <button class="botao-acao">SAIBA MAIS</button>
+                </div>
+            </div>
+        </section>
+        <section class="secao-filmes">
+            <h2 class="titulo-secao">Nossos parques: </h2>
+            <div class="container-filmes">
+                <div class="explicacaoIlhas">
+                    <h3>Isla Nublar – Jurassic Park</h3>
+                    <p>Localizada no Pacífico, Isla Nublar é o berço da aventura jurássica. É aqui que a InGen recriou espécies de dinossauros extintas há milhões de anos, em um ambiente selvagem e controlado, pensado para trazer emoção e aprendizado aos visitantes. Com florestas densas, rios cristalinos e paisagens impressionantes, a ilha oferece experiências únicas, desde encontros próximos com os gigantes pré-históricos até aventuras imersivas nos habitats naturais de cada espécie. A primeira ilha do Jurassic Park não é apenas um parque – é a porta de entrada para um mundo onde o passado retorna à vida.</p>
+                </div>
+                <div class="cartao-filme">
+                    <img src="./images/fotoIlhaJurassicParque.jpeg" alt="Jurassic Park">
+                    <h3>Jurassic Park</h3>
+                </div>                
+            </div>
+            <hr>
+            <div class="container-filmes">
+                <div class="explicacaoIlhas">
+                    <h3>Isla Tempestus – Jurassic Word</h3>
+                    <p>Bem-vindo ao Jurassic World, localizado na misteriosa Isla Tempestus, uma ilha selvagem criada para aventuras pré-históricas únicas. Aqui, dinossauros de todas as espécies vivem em habitats cuidadosamente recriados, oferecendo encontros próximos com os gigantes jurássicos. Com atrações emocionantes, laboratórios de ciência avançada e experiências imersivas, Jurassic World na Isla Tempestus leva você a uma jornada épica onde o passado retorna à vida.</p>
+                </div>
+                <div class="cartao-filme">
+                    <img src="./images/ilhaJurassicWord.webp" alt="Jurassic Park">
+                    <h3>Jurassic Word</h3>
+                </div>                
+            </div>
+        </section>
+    </main>
 </body>
 </html>
