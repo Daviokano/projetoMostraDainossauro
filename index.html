@@ -4,27 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurassic Experience</title>
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <nav class="conteudoHeader">
-            <div id="logo">
-                <img src="./images/logoInGen.webp" id="logoFoto">
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="./src/images/logoInGen.webp" id="user_avatar" alt="Avatar">
+    
+                <p id="user_infos">
+                    <span class="item-description">
+                        InGen
+                    </span>
+                    <span class="item-description">
+                        Jurassic Experience
+                    </span>
+                </p>
             </div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="jurassicParque.html">JURASSIC PARQUE</a></li>
-                <li><a href="jurrassicWord.html">JURASSIC WORD</a></li>
-                <li><a href="sobreNos.html">SOBRE NÓS</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#">
+                        <span class="item-description">
+                            Home
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#">
+                        <span class="item-description">
+                            Jurassic Park
+                        </span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">
+                            Jurassic World
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">
+                            Sobre Nós
+                        </span>
+                    </a>
+                </li>
+
+
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">
+                    Logout
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Título</h1>
+    </main>
     <main>
         <section class="secao-heroi">
             <div class="conteudo-heroi">
                 <div class="imagem-heroi">
-                    <img src="./images/fotoPrincipal.jpg" alt="Quarteto Fantástico">
+                    <img src="./src/images/fotoPrincipal.jpg" alt="Quarteto Fantástico">
                 </div>
                 <div class="texto-heroi">
                     <div class="logo-empresa">International Genetic Technologies</div>
@@ -43,7 +101,7 @@
                     <p>Localizada no Pacífico, Isla Nublar é o berço da aventura jurássica. É aqui que a InGen recriou espécies de dinossauros extintas há milhões de anos, em um ambiente selvagem e controlado, pensado para trazer emoção e aprendizado aos visitantes. Com florestas densas, rios cristalinos e paisagens impressionantes, a ilha oferece experiências únicas, desde encontros próximos com os gigantes pré-históricos até aventuras imersivas nos habitats naturais de cada espécie. A primeira ilha do Jurassic Park não é apenas um parque – é a porta de entrada para um mundo onde o passado retorna à vida.</p>
                 </div>
                 <div class="cartao-filme">
-                    <img src="./images/fotoIlhaJurassicParque.jpeg" alt="Jurassic Park">
+                    <img src="./src/images/fotoIlhaJurassicParque.jpeg" alt="Jurassic Park">
                     <h3>Jurassic Park</h3>
                 </div>                
             </div>
@@ -54,11 +112,12 @@
                     <p>Bem-vindo ao Jurassic World, localizado na misteriosa Isla Tempestus, uma ilha selvagem criada para aventuras pré-históricas únicas. Aqui, dinossauros de todas as espécies vivem em habitats cuidadosamente recriados, oferecendo encontros próximos com os gigantes jurássicos. Com atrações emocionantes, laboratórios de ciência avançada e experiências imersivas, Jurassic World na Isla Tempestus leva você a uma jornada épica onde o passado retorna à vida.</p>
                 </div>
                 <div class="cartao-filme">
-                    <img src="./images/ilhaJurassicWord.webp" alt="Jurassic Park">
+                    <img src="./src/images/ilhaJurassicWord.webp" alt="Jurassic Park">
                     <h3>Jurassic Word</h3>
                 </div>                
             </div>
         </section>
     </main>
+    <script src="./src/javascript/header.js"></script>
 </body>
 </html>
