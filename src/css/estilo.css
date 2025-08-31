@@ -97,7 +97,7 @@ main {
 
 .side-item:hover:not(.active),
 #logout_btn:hover {
-    background-color: #7b7b7b;
+    background-color: #bbbbbb;
 }
 
 .side-item a {
@@ -120,6 +120,18 @@ main {
     height: 20px;
 }
 
+.icon-dino{
+    display: flex;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-dino2{
+    display: flex;
+    width: 17px;
+    height: 17px;
+}
+
 #logout {
     border-top: 1px solid #e3e9f7;
     padding: 12px;
@@ -136,6 +148,7 @@ main {
     text-align: start;
     cursor: pointer;
     background-color: transparent;
+    color: #548ce0;
 }
 
 #open_btn {
@@ -340,4 +353,12 @@ main {
     font-size: 1.1rem;
     line-height: 1.6;
     text-align: justify;
+}
+
+@media screen and (max-width:768px){
+    .secao-heroi{
+        width: 50%;
+        height: 60%;
+        padding-left: 0px;
+    }
 }
