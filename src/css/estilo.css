@@ -36,7 +36,7 @@ body {
 
 main {
     padding: 20px;
-    position: fixed;
+    position: relative;
     z-index: 1;
     padding-left: calc(82px + 20px);
 }
@@ -48,7 +48,7 @@ main {
     background-color: #ffffff;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
-    position: relative;
+    position: fixed;
     transition: all .5s;
     min-width: 82px;
     z-index: 2;
