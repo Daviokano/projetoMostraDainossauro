@@ -31,6 +31,8 @@ body {
 
 main {
     padding: 20px;
+    position: relative;
+    z-index: 1;
     padding-left: calc(82px + 20px);
     width: 100%;
 }
@@ -43,6 +45,7 @@ main {
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
     position: fixed; 
+    position: fixed;
     transition: all .5s;
     min-width: 82px;
     z-index: 2;
@@ -91,7 +94,7 @@ main {
 
 .side-item:hover:not(.active),
 #logout_btn:hover {
-    background-color: #7b7b7b;
+    background-color: #bbbbbb;
 }
 
 .side-item a {
@@ -114,6 +117,18 @@ main {
     height: 20px;
 }
 
+.icon-dino{
+    display: flex;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-dino2{
+    display: flex;
+    width: 17px;
+    height: 17px;
+}
+
 #logout {
     border-top: 1px solid #e3e9f7;
     padding: 12px;
@@ -130,6 +145,7 @@ main {
     text-align: start;
     cursor: pointer;
     background-color: transparent;
+    color: #548ce0;
 }
 
 #open_btn {
@@ -347,9 +363,9 @@ main {
     position: relative;
     width: 90%;
     max-width: 1200px;
-    margin: 50px auto; /* Adicione margem superior e inferior, e auto nas laterais para centralizar */
+    margin: 50px auto; 
     overflow: hidden;
-    border-radius: 200px; /* Aumente o valor para deixar a borda mais arredondada */
+    border-radius: 200px;
 }
 
 .slider .list {
@@ -467,8 +483,8 @@ main {
 
 .slider .item img {
     max-width: 80%;
-    height: 400px; /* Aumenta a altura das imagens */
-    object-fit: contain; /* Mantém a proporção e ajusta a imagem */
+    height: 400px; 
+    object-fit: contain; 
 }
 
 .slider .item .info {
@@ -512,18 +528,17 @@ main {
     background: rgba(255, 255, 255, 0.5);
 }
 
-/* Estilos para a nova seção de informações */
 .info-setores {
     padding: 40px;
-    padding-left: calc(82px + 40px); /* Alinha com o conteúdo do carrossel */
+    padding-left: calc(82px + 40px); 
     text-align: center;
-    background-color: #f5f5f5; /* Cor de fundo da sua página */
+    background-color: #f5f5f5; 
 }
 
 .linha-divisoria {
     width: 50%;
-    margin: 0 auto 30px; /* Centraliza a linha e dá espaçamento */
-    border: 1px solid #ccc; /* Cor e espessura da linha */
+    margin: 0 auto 30px; 
+    border: 1px solid #ccc;
 }
 
 .container-texto {
@@ -541,4 +556,11 @@ main {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #666;
+}
+@media screen and (max-width:768px){
+    .secao-heroi{
+        width: 50%;
+        height: 60%;
+        padding-left: 0px;
+    }
 }
