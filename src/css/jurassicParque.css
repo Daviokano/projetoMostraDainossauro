@@ -45,7 +45,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #1C1C1C;
+    background-color: #ffffff;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
     position: fixed; 
@@ -226,12 +226,10 @@ main {
 }
 
 .content {
-    background: white;
     padding: 40px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    background: #1C1C1C;
     color: #f5f5f5;
     display: flex;
     gap: 30px;
@@ -254,9 +252,12 @@ main {
     border-radius: 10px;
 }
 
+.description h1 {
+    color: #000000;
+}
 .description p {
     font-size: 1.1rem;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -281,8 +282,7 @@ main {
 
 
 .profession-card {
-    background:#1C1C1C;
-    border-radius: 15px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);    border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
