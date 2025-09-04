@@ -18,7 +18,7 @@ body {
 }
 
 #logoFoto {
-    height: 75px; /* deixa a logo pequena */
+    height: 75px;
     width: 100px;
 }
 
@@ -193,6 +193,108 @@ main {
     gap: 14px;
 }
 
+.secao-heroi {
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.conteudo-heroi {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.imagem-heroi {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+}
+
+.imagem-heroi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagem-heroi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.texto-heroi {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: right;
+    z-index: 10;
+}
+
+.logo-empresa {
+    background-color: #ed1d24;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.texto-heroi h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.lancamento {
+    font-size: 1rem;  
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.botao-acao {
+    background-color: rgba(255,255,255,0.9);
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.botao-acao:hover {
+    background-color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .slider-container {
     padding: 50px 0;
     text-align: center;
@@ -259,19 +361,44 @@ main {
 }
 
 .slider .buttons button {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    font-size: 2rem;
-    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    transition: background-color 0.3s;
+    background-color: #3f51b5;
+    color: white;
+    border: 2px solid #546a9a;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+    opacity: 0.8;
 }
 
 .slider .buttons button:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background-color: #4c62b5;
+    border-color: #6a82b5;
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    opacity: 1;
 }
+
+.slider .buttons button:active {
+    transform: translateY(-50%) scale(0.95);
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.slider .buttons button#prev {
+    left: 20px;
+}
+
+.slider .buttons button#next {
+    right: 20px;
+}
+
 .secao-carrossel {
     padding: 20px;
     padding-left: calc(82px + 50px); 
@@ -281,7 +408,6 @@ main {
     min-height: 100vh;
     background-color: #f5f5f5; 
 }
-
 
 .slider-container {
     width: 90%;
@@ -353,21 +479,6 @@ main {
     padding: 0 10px;
 }
 
-.slider .buttons button {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-.slider .buttons button:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
-
 .info-setores {
     padding: 40px;
     padding-left: calc(82px + 40px); 
@@ -397,6 +508,88 @@ main {
     line-height: 1.6;
     color: #666;
 }
+
+.secao-filmes {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 60px 40px;
+    text-align: left;
+    padding-left: calc(82px + 40px);
+}
+
+.titulo-secao {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.container-ilha {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.container-ilha:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.cartao-filme {
+    border-radius: 15px;
+    padding: 0;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px);
+    flex-shrink: 0;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.cartao-filme:hover {
+    transform: translateY(-10px);
+}
+
+.cartao-filme img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.cartao-filme h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.explicacaoIlhas {
+    flex: 1;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.explicacaoIlhas h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.explicacaoIlhas p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
 @media screen and (max-width:768px){
     .secao-heroi{
         width: 50%;
