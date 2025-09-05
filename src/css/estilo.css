@@ -31,7 +31,7 @@ body {
 
 main {
     padding: 20px;
-    position: fixed;
+    position: relative;
     z-index: 1;
     padding-left: calc(82px + 20px);
     width: 100%;
@@ -281,5 +281,38 @@ main {
     background-color: white;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.estrutura{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px
+}
+.estrutura h1
+{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.estrutura h1 a
+{
+    font-size: 3.5rem;
+}
+.estrutura p
+{
+    font-size: 1.5rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+hr{
+    margin: auto;
+    width: 90vw;
+}
+.textos img{
+    float: right;
+    width: 500px;
+    padding-left: 50px;
+
 }
 
