@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -12,33 +13,21 @@ body {
 main {
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
 }
 
-
-#logo{
+#logo {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
 #logoFoto {
-    height: 75px; /* deixa a logo pequena */
+    height: 75px;
     width: 100px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-main {
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    padding-left: calc(82px + 20px);
-    width: 100%;
 }
 
 #sidebar {
@@ -48,7 +37,6 @@ main {
     background-color: #ffffff;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
-    position: fixed; 
     position: fixed;
     transition: all .5s;
     min-width: 82px;
@@ -121,13 +109,13 @@ main {
     height: 20px;
 }
 
-.icon-dino{
+.icon-dino {
     display: flex;
     width: 22px;
     height: 22px;
 }
 
-.icon-dino2{
+.icon-dino2 {
     display: flex;
     width: 17px;
     height: 17px;
@@ -197,7 +185,6 @@ main {
     gap: 14px;
 }
 
-
 .hero-section {
     padding: 40px 20px;
     text-align: center;
@@ -208,7 +195,7 @@ main {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .parks-banner {
@@ -216,7 +203,7 @@ main {
     height: 500px;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .parks-banner img {
@@ -229,7 +216,7 @@ main {
     padding: 40px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     color: #f5f5f5;
     display: flex;
     gap: 30px;
@@ -254,9 +241,12 @@ main {
 
 .description h1 {
     color: #000000;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
 }
+
 .description p {
-    font-size: 1.1rem;
+    font-size: 2.2rem;
     color: #000000;
     margin-bottom: 20px;
 }
@@ -272,27 +262,27 @@ main {
     color: #2d3748;
 }
 
- .professions-grid {
+.professions-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
-} 
-
-
+}
 
 .profession-card {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);    border-radius: 15px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 15px;
     padding: 2rem;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     border-top: 4px solid;
-
+    text-decoration: none;
+    display: block;
 }
 
 .profession-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .profession-card.tech {
@@ -368,5 +358,3 @@ main {
     border-radius: 15px;
     font-size: 0.8rem;
 }
-
-
