@@ -200,13 +200,13 @@ main {
 }
 
 .conteudo-heroi {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    height: 500px;
+    height: 650px;
     display: flex;
     align-items: center;
 }
@@ -290,6 +290,7 @@ main {
     padding-bottom: 30px;
     padding-top: 30px;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 15px;
 }
 .estrutura h1
 {
@@ -392,17 +393,18 @@ h2.subtitle {
   text-align: center;
 }
 
-.container {
+.funcionarios {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin: 30px;
 }
 
 .nossoTime {
   width: 200px;
   text-align: center;
+  padding: 15px;
 }
 
 .fotoFuncionario {
@@ -410,6 +412,11 @@ h2.subtitle {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.nossoTime p {
+    font-size:1.2rem;
+}
+
 
 /* Cores dos cards */
 .red { background: #e74c3c; }
