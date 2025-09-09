@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logoFoto {
+    height: 75px; /* deixa a logo pequena */
+    width: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+    width: 100%;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+    position: fixed; 
+    position: fixed;
+    transition: all .5s;
+    min-width: 82px;
+    z-index: 2;
+}
+
+#sidebar_content {
+    padding: 12px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+#user_infos span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side-item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #bbbbbb;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #548ce0;
+}
+
+.side-item.active a {
+    color: #e3e9f7;
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-dino{
+    display: flex;
+    width: 22px;
+    height: 22px;
+}
+
+.icon-dino2{
+    display: flex;
+    width: 17px;
+    height: 17px;
+}
+
+#logout {
+    border-top: 1px solid #e3e9f7;
+    padding: 12px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+    color: #548ce0;
+}
+
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #548ce0;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#open_btn_icon {
+    transition: transform .3s ease;
+}
+
+.open-sidebar #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 150px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+
+.hero-section {
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.parks-banner {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.parks-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    color: #f5f5f5;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.description {
+    flex: 1;
+    line-height: 1.6;
+    color: #e9ecef;
+}
+
+.fotoJurassicParl {
+    flex: 1;
+}
+
+.fotoJurassicParl img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description h1 {
+    color: #000000;
+}
+.description p {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.professions {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2d3748;
+}
+
+ .professions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+} 
+
+
+
+.profession-card {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid;
+
+}
+
+.profession-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.profession-card.tech {
+    border-top-color: #4299e1;
+}
+
+.profession-card.health {
+    border-top-color: #48bb78;
+}
+
+.profession-card.education {
+    border-top-color: #ed8936;
+}
+
+.profession-card.business {
+    border-top-color: #9f7aea;
+}
+
+.profession-card.creative {
+    border-top-color: #f56565;
+}
+
+.profession-card.engineering {
+    border-top-color: #38b2ac;
+}
+
+.profession-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.profession-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #dbdde1;
+}
+
+.profession-card p {
+    color: #f1f1f1;
+    margin-bottom: 1rem;
+}
+
+.salary-range {
+    background: #edf2f7;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #4a5568;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    margin-top: 1rem;
+}
+
+.skills h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background: #e2e8f0;
+    color: #4a5568;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+

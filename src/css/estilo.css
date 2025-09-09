@@ -7,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
+    overflow-y: scroll;
 }
 
 
@@ -28,17 +29,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    
-}
-
 main {
     padding: 20px;
-    position: fixed;
+    position: relative;
     z-index: 1;
     padding-left: calc(82px + 20px);
+    width: 100%;
 }
 
 #sidebar {
@@ -48,7 +44,8 @@ main {
     background-color: #ffffff;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
-    position: relative;
+    position: fixed; 
+    position: fixed;
     transition: all .5s;
     min-width: 82px;
     z-index: 2;
@@ -262,7 +259,7 @@ main {
 }
 
 .lancamento {
-    font-size: 1rem;
+    font-size: 1rem;  
     margin-bottom: 25px;
     opacity: 0.8;
 }
@@ -277,6 +274,7 @@ main {
     cursor: pointer;
     font-size: 14px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .botao-acao:hover {
@@ -285,76 +283,43 @@ main {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.secao-filmes {
+.estrutura{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
-    padding: 60px 40px;
-    text-align: left;
 }
-
-.titulo-secao {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.container-filmes {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-.cartao-filme {
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 15px;
-    padding: 20px;
-    transition: transform 0.3s ease;
-    backdrop-filter: blur(10px);
-}
-
-.cartao-filme:hover {
-    transform: translateY(-10px);
-}
-
-.cartao-filme img {
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.cartao-filme h3 {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
-
-.explicacaoIlhas {
-    flex: 1;
-    color: white;
-    text-align: left;
-    padding: 20px;
-    margin-right: 30px;
-}
-
-.explicacaoIlhas h3 {
+.estrutura h1
+{
     font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-weight: 900;
+    color: #f5f5f5;
+    
 }
-
-.explicacaoIlhas p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+.estrutura h1 a
+{
+    font-size: 3.5rem;
+}
+.estrutura p
+{
+    font-size: 1.5rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: justify;
+    color: white;
+}
+hr{
+    margin: auto;
+    width: 90vw;
+}
+.textos img{
+    float: right;
+    width: 500px;
+    padding-left: 50px;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width:768px){
     .secao-heroi{
         width: 50%;
@@ -363,3 +328,94 @@ main {
         padding-top: 10px;
     }
 }
+=======
+#regrasSeguranca {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+}
+
+h2.subtitle {
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 2.0rem
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1 1 200px;
+  max-width: 600px;
+  min-height: 200px;
+  border-radius: 12px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-size: 1.0rem;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tituloTime {
+  margin-top: 0; /* Ou ajuste como quiser */
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.nossoTime {
+  width: 200px;
+  text-align: center;
+}
+
+.fotoFuncionario {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Cores dos cards */
+.red { background: #e74c3c; }
+.orange { background: #e67e22; }
+.blue { background: #2980b9; }
+.green { background: #27ae60; }
+.purple { background: #8e44ad; }
+
+>>>>>>> acdcad51b4720e7aa586deb02defa578350f58b2
