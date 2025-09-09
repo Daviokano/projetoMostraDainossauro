@@ -242,21 +242,25 @@ main {
     color: #e9ecef;
 }
 
-.fotoJurassicParl {
+.fotoJurassicParl{
     flex: 1;
 }
 
 .fotoJurassicParl img {
     width: 100%;
-    height: auto;
+    height: 50%;
     border-radius: 10px;
+    margin-top: 100px;
 }
 
 .description h1 {
     color: #000000;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
 }
+
 .description p {
-    font-size: 1.1rem;
+    font-size: 2.2rem;
     color: #000000;
     margin-bottom: 20px;
 }
