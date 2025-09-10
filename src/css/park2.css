@@ -194,236 +194,148 @@ main {
     gap: 14px;
 }
 
-.secao-heroi {
+.content {
     padding: 40px;
-    background-color: #f5f5f5;
-}
-
-.conteudo-heroi {
-    max-width: 1600px;
-    margin: 0 auto;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    height: 650px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 75%;
+    color: #f5f5f5;
     display: flex;
-    align-items: center;
+    gap: 30px;
 }
 
-.imagem-heroi {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 70%;
-    height: 100%;
+.description {
+    flex: 1;
+    line-height: 1.6;
+    color: #e9ecef;
 }
 
-.imagem-heroi img {
+.fotoJurassicParl {
+    flex: 1;
+}
+
+.fotoJurassicParl img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border-radius: 10px;
 }
 
-.texto-heroi {
-    position: absolute;
-    right: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    text-align: right;
-    z-index: 10;
-}
-
-.logo-empresa {
-    background-color: #ed1d24;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
+.description h1 {
+    color: #000000;
+    font-size: 2.8rem;
     margin-bottom: 15px;
-    display: inline-block;
 }
 
-.texto-heroi h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+.description p {
+    font-size: 2.2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: large;
 }
 
-.subtitulo {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    opacity: 0.9;
+.descricao-equipe{
+    text-align: center;
+    color: #000000;
+    font-size: 1.6rem;
+    margin-top: 20%;
 }
 
-.lancamento {
-    font-size: 1rem;  
-    margin-bottom: 25px;
-    opacity: 0.8;
-}
-
-.botao-acao {
-    background-color: rgba(255,255,255,0.9);
-    color: #333;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.botao-acao:hover {
-    background-color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.estrutura{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    border-radius: 15px;
-}
-.estrutura h1
-{
-    font-size: 2rem;
-    font-weight: 900;
-    color: #f5f5f5;
-    
-}
-.estrutura h1 a
-{
-    font-size: 3.5rem;
-}
-.estrutura p
-{
-    font-size: 1.5rem;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: justify;
-    color: white;
-}
-hr{
-    margin: auto;
-    width: 90vw;
-}
-.textos img{
-    float: right;
-    width: 500px;
-    padding-left: 50px;
-}
-
-@media screen and (max-width:768px){
-    .secao-heroi{
-        width: 50%;
-        height: 60%;
-        padding-left: 0px;
-        padding-top: 10px;
-    }
-}
-
-#regrasSeguranca {
-  margin-top: 30px;
-  font-size: 2rem;
-  color: #2c3e50;
-  display: flex;
-  justify-content: center;
-}
-
-h2.subtitle {
-  color: #555;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  font-size: 2.0rem
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
 }
 
 .card {
-  flex: 1 1 200px;
-  max-width: 600px;
-  min-height: 200px;
-  border-radius: 12px;
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
+    height: 700px;
+    width: 80px;
+    border-radius: .75rem;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
 
-.card:hover {
-  transform: scale(1.05);
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-.card h2 {
-  margin: 0;
-  font-size: 0.9rem;
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
 }
 
-.card p {
-  font-size: 1.0rem;
-  margin-top: 10px;
-  text-align: center;
-  font-weight: bold;
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
 }
 
-.tituloTime {
-  margin-top: 0; /* Ou ajuste como quiser */
-  font-size: 2rem;
-  color: #2c3e50;
-  text-align: center;
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
 }
 
-.funcionarios {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 30px;
+.description h4 {
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
-.nossoTime {
-  width: 200px;
-  text-align: center;
-  padding: 15px;
+input {
+    display: none;
 }
 
-.fotoFuncionario {
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+input:checked + label {
+    width: 600px;
 }
 
-.nossoTime p {
-    font-size:1.2rem;
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
+.card[for="c1"] {
+    background-image: url('./personagem1.jpg');
+}
+.card[for="c2"] {
+    background-image: url('./img2.jpeg');
+}
+.card[for="c3"] {
+    background-image: url('./img3.jpeg');
+}
+.card[for="c4"] {
+    background-image: url('./img4.jpeg');
+}
 
-/* Cores dos cards */
-.red { background: #e74c3c; }
-.orange { background: #e67e22; }
-.blue { background: #2980b9; }
-.green { background: #27ae60; }
-.purple { background: #8e44ad; }
 
 .footer{
   position: relative;
@@ -434,6 +346,7 @@ h2.subtitle {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  margin-top: 15%;
 }
 
 .social-icon{
@@ -494,5 +407,3 @@ h2.subtitle {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
-

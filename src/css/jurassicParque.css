@@ -279,6 +279,8 @@ main {
 
 .professions {
     padding: 80px 0;
+    width: 100%;
+    padding-left: 5%;
 }
 
 .section-title {
@@ -304,35 +306,13 @@ main {
     border-top: 4px solid;
     text-decoration: none;
     display: block;
+    width: 80%;    
 }
+
 
 .profession-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.profession-card.tech {
-    border-top-color: #4299e1;
-}
-
-.profession-card.health {
-    border-top-color: #48bb78;
-}
-
-.profession-card.education {
-    border-top-color: #ed8936;
-}
-
-.profession-card.business {
-    border-top-color: #9f7aea;
-}
-
-.profession-card.creative {
-    border-top-color: #f56565;
-}
-
-.profession-card.engineering {
-    border-top-color: #38b2ac;
 }
 
 .profession-icon {
