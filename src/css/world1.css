@@ -350,6 +350,12 @@ input:checked + label .description {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+}
+
+.social-icon .footer-logo{
+  display: flex;
+  height: 20px;
+  width: 20px;
 
 }
 
