@@ -35,6 +35,7 @@ main {
     z-index: 1;
     padding-left: calc(82px + 20px);
     width: 100%;
+    background-image: url('../src/images/fundosavana.jpg');
 }
 
 #sidebar {
@@ -398,6 +399,7 @@ main {
 .slider .buttons button#next {
     right: 20px;
 }
+
 
 .secao-carrossel {
     padding: 20px;
