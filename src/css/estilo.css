@@ -330,6 +330,13 @@ hr{
     }
 }
 
+.conteudoRegras{
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    border-radius: 15px;
+    margin: 60px;
+    padding: 20px;
+}
+
 #regrasSeguranca {
   margin-top: 30px;
   font-size: 2rem;
@@ -386,10 +393,24 @@ h2.subtitle {
   font-weight: bold;
 }
 
+
+
 .tituloTime {
   margin-top: 0; /* Ou ajuste como quiser */
   font-size: 2rem;
-  color: #2c3e50;
+  color:#e3e9f7;
+  text-align: center;
+}
+
+.fotoFundadores{
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.fotoFundadores h2 {
+  margin-top: 15px; /* Ou ajuste como quiser */
+  color:#e3e9f7;
   text-align: center;
 }
 
@@ -399,6 +420,7 @@ h2.subtitle {
   gap: 20px;
   flex-wrap: wrap;
   margin: 30px;
+  color: #e3e9f7;
 }
 
 .nossoTime {

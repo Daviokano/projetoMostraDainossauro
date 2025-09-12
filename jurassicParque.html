@@ -72,9 +72,7 @@
 
     <main>
         <div class="hero-section">
-            <div class="parks-banner">
-                <img src="./src/images/jurassic-park-banner1.jpg" alt="Banner dos Parques">
-            </div>
+                <img src="./src/images/fotoBanner.jpg" id="fotoBanner" alt="Banner dos Parques">
         </div>
 
         <div class="content">
@@ -86,7 +84,7 @@
             </div>
 
             <div class="fotoJurassicParl">
-                <img src="./src/images/fotoParque1.jpg">
+                <img src="./src/images/blable2.jpg">
             </div>
         </div>
 
@@ -96,7 +94,8 @@
                 
                 <div class="professions-grid">
                     <a href="./park1.html" class="profession-card tech">
-                        <div class="profession-icon">🦖</div>
+                        <img src="./src/images/fotoBannerJurassicParque.jpg" class="fotoCard">
+                        <!-- <div class="profession-icon">🦕</div> -->
                         <h3>Jurassic Park 1</h3>
                         <p>Embarque na primeira parte da atração temática do setor Park: <br> Jurassic Park, O Parque Dos Dinossauros! </p>
                         <div class="salary-range">💰 Ingresso: R$ 200</div>
@@ -112,41 +111,105 @@
                     </a>
 
                     <a href="./park2.html" class="profession-card tech">
-                        <div class="profession-icon">🦖</div>
+                        <img src="./src/images/fotoCardJurrassic.png" class="fotoCard">
+                        <!-- <div class="profession-icon">🦕</div> -->
                         <h3>Jurassic Park 2</h3>
                         <p>Na segunda parte do parque, teremos o dobro de diversão: <br> Jurassic Park, O Mundo Perdido!</p>
-                        <div class="salary-range">💰 Ingresso: R$ 200</div>
+                        <div class="salary-range">💰 Ingresso: R$ 700</div>
                         <div class="skills">
                             <h4>O que você vai experimentar:</h4>
                             <div class="skill-tags">
-                                <span class="skill-tag">Tour pelo parque</span>
-                                <span class="skill-tag">Foto com os Dinos</span>
-                                <span class="skill-tag">Exposição de fósseis</span>
-                                <span class="skill-tag">Passeios em veículos elétricos</span>
+                                <span class="skill-tag">Tudo incluso da primeira</span>
+                                <span class="skill-tag">Acesso parcial ao laboratório</span>
+                                <span class="skill-tag">Almoço incluso</span>
+                                <span class="skill-tag">Fila especial em algumas atrações</span>
                             </div>
                         </div>
                     </a>
 
                     <a href="./park3.html" class="profession-card tech">
-                        <div class="profession-icon">🦖</div>
+                        <img src="./src/images/fotocardJurrisc3.avif" class="fotoCard">
+                        <!-- <div class="profession-icon">🦕</div> -->
                         <h3>Jurassic Park 3</h3>
                         <p>Última seção do parque, a mais completa e com o triplo de diversão: <br> Jurassic Park 3.</p>
-                        <div class="salary-range">💰 Ingresso: R$ 200</div>
+                        <div class="salary-range">💰 Ingresso: R$ 1000</div>
                         <div class="skills">
                             <h4>O que você vai experimentar:</h4>
                             <div class="skill-tags">
-                                <span class="skill-tag">Tour pelo parque</span>
-                                <span class="skill-tag">Foto com os Dinos</span>
-                                <span class="skill-tag">Exposição de fósseis</span>
-                                <span class="skill-tag">Passeios em veículos elétricos</span>
+                                <span class="skill-tag">Tudo incluso da primeria</span>
+                                <span class="skill-tag">Acesso total ao laborátorio</span>
+                                <span class="skill-tag">Almoços e jantares inclusos</span>
+                                <span class="skill-tag">Fila especial em todas às atrações</span>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
+   
+        <div id="cover" class="quiz-box">
+                <h1>Descubra seu ingresso ideal!</h1>
+                <p class="description">Na dúvida entre qual ingresso escolher? isso pode te ajudar:</p>
+                <div class="cover-info">
+                    <div class="info-item">
+                        <span class="icon">📝</span>
+                        <span>5 Questões</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">⏱️</span>
+                        <span>Sem limite de tempo</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🏆</span>
+                        <span>Pontuação final</span>
+                    </div>
+                </div>
+                <button id="start-btn" onclick="startQuiz()">Iniciar Quiz</button>
+            </div>
+
+            <!-- Quiz -->
+            <div id="quiz" class="quiz-box" style="display: none;">
+                <h1>Questionário</h1>
+                <div id="question-container">
+                    <h2 id="question"></h2>
+                    <div id="options"></div>
+                </div>
+                <div class="buttons">
+                    <button id="prev-btn" onclick="previousQuestion()">Anterior</button>
+                    <button id="next-btn" onclick="nextQuestion()">Próxima</button>
+                    <button id="submit-btn" onclick="submitQuiz()" style="display: none;">Finalizar</button>
+                </div>
+                <div id="result" style="display: none;"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social-icon">
+                <a href="" class="icon"><ion-icon name="mail-outline"></ion-icon></a>
+                <a href="" class="icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="" class="icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="" class="icon"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            
+            <ul class="menu">
+                <li class="menu-elem">
+                    <a href="profissoes.html" class="menu-icon">Jurassic Park</a>
+                </li>   
+                <li class="menu-elem">
+                    <a href="sobre.html" class="menu-icon">Jurassic World</a>
+                </li>  
+                <li class="menu-elem">
+                    <a href="orientacoes.html" class="menu-icon">Setores</a>
+                </li>  
+                <li class="menu-elem">
+                    <a href="comoseguir.html" class="menu-icon">Home</a>
+                </li>
+            </ul>
+            <p class="text">@2025 - InGen</p>
+        </footer>
         
     </main>
-    <script src="./src/javascript/header.js"></script>
-</body>
 </html>
+    <script src="./src/javascript/header.js"></script>
+    <script src="./src/javascript/questionarioPark.js"></script>
+</body>

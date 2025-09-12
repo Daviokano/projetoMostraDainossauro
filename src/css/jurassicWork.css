@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Geologica", sans-serif;
+
 }
 
 body {
@@ -14,17 +15,20 @@ body {
 main {
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
 }
 
-
-#logo{
+#logo {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
 #logoFoto {
-    height: 75px; /* deixa a logo pequena */
+    height: 75px;
     width: 100px;
 }
 
@@ -32,6 +36,7 @@ main {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -55,7 +60,6 @@ main {
     background-color: #ffffff;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
-    position: fixed; 
     position: fixed;
     transition: all .5s;
     min-width: 82px;
@@ -128,13 +132,13 @@ main {
     height: 20px;
 }
 
-.icon-dino{
+.icon-dino {
     display: flex;
     width: 22px;
     height: 22px;
 }
 
-.icon-dino2{
+.icon-dino2 {
     display: flex;
     width: 17px;
     height: 17px;
@@ -204,111 +208,135 @@ main {
     gap: 14px;
 }
 
-
 .hero-section {
-    padding: 40px 20px;
+    padding: 30px 30px;
     text-align: center;
     position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 1800px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+#fotoBanner {
+    width: 1700px;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 60px;
+    padding: 20px;
 }
 
 .hero-section h1 {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.parks-banner {
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-.parks-banner img {
-    width: 1700px;
-    height: 700px;
-    object-fit: cover;
-}
 
 .content {
     padding: 40px;
-    margin: 20px;
+    margin: 60px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     width: 75%;
-    color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background-color: #2d3748;
 }
 
 .description {
     flex: 1;
     line-height: 1.6;
-    color: #e9ecef;
+    color: #2275c7;
 }
 
-.fotoJurassicParl{
+.fotoJurassicParl {
     flex: 1;
 }
 
 .fotoJurassicParl img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     border-radius: 10px;
 }
 
 .description h1 {
-    color: #000000;
+    color: #ffffff;
     font-size: 2.8rem;
+    margin-bottom: 15px;
 }
 
 .description p {
-    font-size: 2.2rem;
-    color: #000000;
+    font-size: 1.5rem;
+    color: #ffffff;
     margin-bottom: 20px;
-    font-size: large;
 }
 
 .professions {
     padding: 80px 0;
     width: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2d3748;
+    color: #ffffff;
+    text-align: center;
 }
 
- .professions-grid {
+.professions-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
-} 
-
+}
 
 .profession-card {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);    border-radius: 15px;
+    border-radius: 15px;
     padding: 2rem;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     border-top: 4px solid;
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    background:#e3e9f7 ;
+    margin: 0 auto;
+}
 
+.fotoCard {
+    width: 100%;
+    height: 250px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.profession-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+}
+
+.profession-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .profession-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #dbdde1;
+    color:#4a5568;
 }
 
 .profession-card p {
-    color: #f1f1f1;
+    color: #4a5568;
     margin-bottom: 1rem;
 }
 
@@ -329,7 +357,7 @@ main {
 .skills h4 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: #4a5568;
 }
 
 .skill-tags {
@@ -345,5 +373,226 @@ main {
     border-radius: 15px;
     font-size: 0.8rem;
 }
+
+.quiz-box {
+    background: white;
+    border-radius: 15px;
+    margin: 40px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 35%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+#cover h1 {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.option {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background: #e9ecef;
+    border-color: #667eea;
+}
+
+.option.selected {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#cover button{
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+.buttons button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #5a6fd8;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    color: #155724;
+}
+
+/* Estilos da Capa */
+.description {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cover-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 2em;
+}
+
+.info-item span:last-child {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 500;
+}
+
+#start-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-size: 1.2em;
+    padding: 15px 40px;
+    margin-top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+#start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  background: #eeeded;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.social-icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-elem{
+  list-style: none;
+}
+
+.icon{
+  color: #548ce0;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover{
+  transform: translateY(-10px);
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-elem{
+  list-style: none;
+}
+
+.menu-icon{
+  color: #548ce0;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.menu-icon:hover{
+  opacity: 1;
+}
+
+.text{
+  color: #548ce0;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
 
 
