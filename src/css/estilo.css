@@ -406,6 +406,7 @@ h2.subtitle {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     border-radius: 15px;
     padding: 20px;
+    margin: 40px;
 }
 
 .fotoFundadores h2 {

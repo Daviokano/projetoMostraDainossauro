@@ -209,22 +209,21 @@ main {
 }
 
 .hero-section {
-    padding: 30px 30px;
+    padding: 40px 20px;
     text-align: center;
     position: relative;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     border-radius: 20px;
-    width: 1800px;
+    width: 1700px;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
 #fotoBanner {
-    width: 1700px;
-    height: 750px;
+    width: 1600px;
+    height: 650px;
     object-fit: cover;
-    border-radius: 60px;
-    padding: 20px;
+    border-radius: 15px;
 }
 
 .hero-section h1 {
@@ -261,7 +260,7 @@ main {
 
 .fotoJurassicParl img {
     width: 100%;
-    height: 400px;
+    height: 350px;
     border-radius: 10px;
 }
 
@@ -314,7 +313,7 @@ main {
 
 .fotoCard {
     width: 100%;
-    height: 250px;
+    height: 200px;
     border-radius: 30px;
     padding: 10px;
 }
@@ -446,6 +445,18 @@ h2 {
 }
 
 .buttons button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+#botaoRecomecar{
     background: #667eea;
     color: white;
     border: none;

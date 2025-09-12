@@ -105,7 +105,7 @@ function submitQuiz() {
         <h2>Resultado Final</h2>
         <p>Você acertou ${score} de ${questions.length} questões</p>
         <p>Sua pontuação: ${percentage}%</p>
-        <button onclick="restartQuiz()">Refazer Questionário</button>
+        <button id="botaoRecomecar" onclick="restartQuiz()">Refazer Questionário</button>
     `;
     resultDiv.style.display = 'block';
 }
