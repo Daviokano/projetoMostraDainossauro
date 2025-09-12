@@ -238,7 +238,7 @@ main {
     text-align: center;
     color: #000000;
     font-size: 1.6rem;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .wrapper {
@@ -350,7 +350,7 @@ input:checked + label .description {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  margin-top: 15%;
+
 }
 
 .social-icon{
