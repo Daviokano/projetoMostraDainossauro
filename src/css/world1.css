@@ -232,6 +232,7 @@ main {
     color: #000000;
     margin-bottom: 20px;
     font-size: large;
+    text-align: justify;
 }
 
 .descricao-equipe{
