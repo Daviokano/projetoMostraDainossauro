@@ -440,8 +440,6 @@ h2.subtitle {
     font-size:1.2rem;
 }
 
-
-/* Cores dos cards */
 .red { background: #e74c3c; }
 .orange { background: #e67e22; }
 .blue { background: #2980b9; }
@@ -457,30 +455,6 @@ h2.subtitle {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-}
-
-.social-icon{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 10px 5px;
-  flex-wrap: wrap;
-}
-
-.icon-elem{
-  list-style: none;
-}
-
-.icon{
-  color: #548ce0;
-  font-size: 32px;
-  display: inline-block;
-  margin: 0 10px;
-  transition: 0.5s;
-}
-
-.icon:hover{
-  transform: translateY(-10px);
 }
 
 .menu{
@@ -517,5 +491,3 @@ h2.subtitle {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
-

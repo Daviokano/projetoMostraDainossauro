@@ -547,30 +547,6 @@ button:disabled {
   border-radius: 10px;
 }
 
-.social-icon{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 10px 5px;
-  flex-wrap: wrap;
-}
-
-.icon-elem{
-  list-style: none;
-}
-
-.icon{
-  color: #548ce0;
-  font-size: 32px;
-  display: inline-block;
-  margin: 0 10px;
-  transition: 0.5s;
-}
-
-.icon:hover{
-  transform: translateY(-10px);
-}
-
 .menu{
   display: flex;
   justify-content: center;

@@ -2,16 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     overflow-y: scroll;
+    background-image: url('../images/fundofloresta.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-
-#logo{
+#logo {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -22,22 +26,6 @@ body {
     width: 100px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-main {
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    padding-left: calc(82px + 20px);
-    width: 100%;
-    background-image: url('../src/images/fundosavana.jpg');
-}
-
 #sidebar {
     display: flex;
     flex-direction: column;
@@ -45,7 +33,6 @@ main {
     background-color: #ffffff;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
-    position: fixed; 
     position: fixed;
     transition: all .5s;
     min-width: 82px;
@@ -118,13 +105,13 @@ main {
     height: 20px;
 }
 
-.icon-dino{
+.icon-dino {
     display: flex;
     width: 22px;
     height: 22px;
 }
 
-.icon-dino2{
+.icon-dino2 {
     display: flex;
     width: 17px;
     height: 17px;
@@ -262,7 +249,7 @@ main {
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .subtitulo {
@@ -272,13 +259,13 @@ main {
 }
 
 .lancamento {
-    font-size: 1rem;  
+    font-size: 1rem;
     margin-bottom: 25px;
     opacity: 0.8;
 }
 
 .botao-acao {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     color: #333;
     border: none;
     padding: 15px 30px;
@@ -296,19 +283,35 @@ main {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.secao-carrossel {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+
 .slider-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #0c4278;
+    border-radius: 20px;
+    overflow: hidden;
     padding: 50px 0;
+    position: relative;
     text-align: center;
-    background-color: #212529;
 }
 
 .slider {
     position: relative;
-    width: 90%;
-    max-width: 1200px;
-    margin: 50px auto; 
+    width: 100%;
+    margin: auto;
     overflow: hidden;
-    border-radius: 200px;
 }
 
 .slider .list {
@@ -327,12 +330,12 @@ main {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #212529;
+    background-color: #0c4278;
 }
 
 .slider .item img {
     max-width: 80%;
-    height: auto;
+    height: 400px;
     object-fit: contain;
 }
 
@@ -359,6 +362,7 @@ main {
     justify-content: space-between;
     transform: translateY(-50%);
     z-index: 10;
+    padding: 0 10px;
 }
 
 .slider .buttons button {
@@ -400,112 +404,31 @@ main {
     right: 20px;
 }
 
-
-.secao-carrossel {
-    padding: 20px;
-    padding-left: calc(82px + 50px); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 75vh;
-    background-color: #f5f5f5; 
-}
-
-.slider-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #0c4278;
-    border-radius: 20px; 
-    overflow: hidden;
-    padding: 50px 0;
-    position: relative;
-    text-align: center;
-}
-
-.slider {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slider .list {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slider .item {
-    min-width: 100%;
-    flex-shrink: 0;
-    text-decoration: none;
-    color: white;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: #0c4278;
-}
-
-.slider .item img {
-    max-width: 80%;
-    height: 400px; 
-    object-fit: contain; 
-}
-
-.slider .item .info {
-    margin-top: 20px;
-}
-
-.slider .item .info h3 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.slider .item .info p {
-    font-size: 1.2rem;
-    opacity: 0.8;
-}
-
-.slider .buttons {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    z-index: 10;
-    padding: 0 10px;
-}
-
-.info-setores {
+.textinho-setores {
     padding: 40px;
-    padding-left: calc(82px + 40px); 
+    padding-left: calc(82px + 40px);
     text-align: center;
-    background-color: #f5f5f5; 
+    background-color: #f5f5f5;
 }
 
-.linha-divisoria {
+.linha {
     width: 50%;
-    margin: 0 auto 30px; 
+    margin: 0 auto 30px;
     border: 1px solid #ccc;
 }
 
-.container-texto {
+.texto {
     max-width: 800px;
     margin: auto;
 }
 
-.container-texto h2 {
+.texto h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 15px;
 }
 
-.container-texto p {
+.texto p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #666;
@@ -523,7 +446,7 @@ main {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 40px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
@@ -550,7 +473,7 @@ main {
     backdrop-filter: blur(10px);
     flex-shrink: 0;
     text-align: center;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .cartao-filme:hover {
@@ -569,7 +492,7 @@ main {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .explicacaoIlhas {
@@ -583,7 +506,7 @@ main {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .explicacaoIlhas p {
@@ -592,8 +515,8 @@ main {
     text-align: justify;
 }
 
-@media screen and (max-width:768px){
-    .secao-heroi{
+@media screen and (max-width:768px) {
+    .secao-heroi {
         width: 50%;
         height: 60%;
         padding-left: 0px;
@@ -609,30 +532,6 @@ main {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-}
-
-.social-icon{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 10px 5px;
-  flex-wrap: wrap;
-}
-
-.icon-elem{
-  list-style: none;
-}
-
-.icon{
-  color: #548ce0;
-  font-size: 32px;
-  display: inline-block;
-  margin: 0 10px;
-  transition: 0.5s;
-}
-
-.icon:hover{
-  transform: translateY(-10px);
 }
 
 .menu{
