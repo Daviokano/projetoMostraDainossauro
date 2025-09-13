@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100..900&family=Share+Tech&display=swap');
 
+
+/*  configurações basicas */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +19,18 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
+    padding-left: calc(82px + 20px);
     position: relative;
     z-index: 1;
-    padding-left: calc(82px + 20px);
+    display: flex;               
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;         
+    min-height: 100vh;           
+    text-align: center;
 }
+
+/* começo header */
 
 #logo {
     display: flex;
@@ -30,27 +41,6 @@ main {
 #logoFoto {
     height: 75px;
     width: 100px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-main {
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    padding-left: calc(82px + 20px);
-    width: 100%;
-    display: flex;               /* ativa o flex */
-    flex-direction: column;      /* empilha os elementos verticalmente */
-    justify-content: center;     /* centraliza verticalmente */
-    align-items: center;         /* centraliza horizontalmente */
-    min-height: 100vh;           /* ocupa toda a altura da tela */
-    text-align: center;
 }
 
 #sidebar {
@@ -208,7 +198,9 @@ main {
     gap: 14px;
 }
 
-.hero-section {
+/* ínicio conteúdo  */
+
+.banner {
     padding: 40px 20px;
     text-align: center;
     position: relative;
@@ -276,7 +268,9 @@ main {
     margin-bottom: 20px;
 }
 
-.professions {
+/*  cards  */
+
+.secao-ingressos {
     padding: 80px 0;
     width: 100%;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -284,14 +278,14 @@ main {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
-.section-title {
+.titulo-secao {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     color: #ffffff;
     text-align: center;
 }
 
-.professions-grid {
+.grid-ingressos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* grid-template-columns: repeat(2, 1fr); */
@@ -301,48 +295,48 @@ main {
     margin-top: 3rem;
 }
 
-.profession-card {
+.card-ingresso {
     border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    border-top: 4px solid;
+    border-top: 4px solid; /* mantém o comentário original */
     text-decoration: none;
     display: block;
     width: 80%;
-    background:#e3e9f7 ;
+    background:#e3e9f7;
     margin: 0 auto;
 }
 
-.fotoCard {
+.foto-card {
     width: 100%;
     height: 200px;
     border-radius: 30px;
     padding: 10px;
 }
 
-.profession-card:hover {
+.card-ingresso:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
 }
 
-.profession-icon {
+/* .card-icone {
     font-size: 3rem;
     margin-bottom: 1rem;
-}
+} */
 
-.profession-card h3 {
+.card-ingresso h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color:#4a5568;
 }
 
-.profession-card p {
+.card-ingresso p {
     color: #4a5568;
     margin-bottom: 1rem;
 }
 
-.salary-range {
+.preco-ingresso {
     background: #edf2f7;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -352,23 +346,23 @@ main {
     margin-bottom: 1rem;
 }
 
-.skills {
+.atividades {
     margin-top: 1rem;
 }
 
-.skills h4 {
+.atividades h4 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
     color: #4a5568;
 }
 
-.skill-tags {
+.tags-atividade {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.skill-tag {
+.tag-atividade {
     background: #e2e8f0;
     color: #4a5568;
     padding: 0.25rem 0.75rem;
@@ -376,6 +370,7 @@ main {
     font-size: 0.8rem;
 }
 
+/* quiz */
 .quiz-box {
     background: white;
     border-radius: 15px;
@@ -537,6 +532,8 @@ button:disabled {
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
 
+
+/* footer  */
 .footer{
   position: relative;
   width: 100%;

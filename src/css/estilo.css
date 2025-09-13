@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica:wght@100..900&family=Share+Tech&display=swap');
 
+.red { background: #e74c3c; }
+.orange { background: #e67e22; }
+.blue { background: #2980b9; }
+.green { background: #27ae60; }
+.purple { background: #8e44ad; }
+
+/* configurações basicas */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +19,15 @@ body {
     overflow-y: scroll;
 }
 
+main {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+    width: 100%;
+}
+
+/* header  */
 
 #logo{
     display: flex;
@@ -24,19 +40,6 @@ body {
     width: 100px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main {
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    padding-left: calc(82px + 20px);
-    width: 100%;
-}
 
 #sidebar {
     display: flex;
@@ -194,12 +197,14 @@ main {
     gap: 14px;
 }
 
-.secao-heroi {
+/* começo do conteúdo (banner)*/
+
+.secao-banner {
     padding: 40px;
     background-color: #f5f5f5;
 }
 
-.conteudo-heroi {
+.conteudo-banner {
     max-width: 1600px;
     margin: 0 auto;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -211,7 +216,7 @@ main {
     align-items: center;
 }
 
-.imagem-heroi {
+.imagem-banner {
     position: absolute;
     left: 0;
     top: 0;
@@ -219,13 +224,13 @@ main {
     height: 100%;
 }
 
-.imagem-heroi img {
+.imagem-banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.texto-heroi {
+.texto-banner {
     position: absolute;
     right: 40px;
     top: 50%;
@@ -246,26 +251,54 @@ main {
     display: inline-block;
 }
 
-.texto-heroi h1 {
+.texto-banner h1 {
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.subtitulo {
+.subtitulo-banner {
     font-size: 1.2rem;
     margin-bottom: 10px;
     opacity: 0.9;
 }
 
-.lancamento {
+.logo-empresa {
+    background-color: #ed1d24;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.logo-empresa {
+    background-color: #ed1d24;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.subtitulo-banner {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.chamada-ingresso {
     font-size: 1rem;  
     margin-bottom: 25px;
     opacity: 0.8;
 }
 
-.botao-acao {
+.botao-ingresso {
     background-color: rgba(255,255,255,0.9);
     color: #333;
     border: none;
@@ -278,11 +311,13 @@ main {
     text-decoration: none;
 }
 
-.botao-acao:hover {
+.botao-ingresso:hover {
     background-color: white;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+/* quem somos */
 
 .estrutura{
     padding-left: 50px;
@@ -299,10 +334,11 @@ main {
     color: #f5f5f5;
     
 }
-.estrutura h1 a
-{
+
+#nomeEmpresaIngen{
     font-size: 3.5rem;
 }
+
 .estrutura p
 {
     font-size: 1.5rem;
@@ -321,14 +357,7 @@ hr{
     padding-left: 50px;
 }
 
-@media screen and (max-width:768px){
-    .secao-heroi{
-        width: 50%;
-        height: 60%;
-        padding-left: 0px;
-        padding-top: 10px;
-    }
-}
+/* regras */
 
 .conteudoRegras{
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
@@ -393,10 +422,8 @@ h2.subtitle {
   font-weight: bold;
 }
 
-
-
 .tituloTime {
-  margin-top: 0; /* Ou ajuste como quiser */
+  margin-top: 0; 
   font-size: 2rem;
   color:#e3e9f7;
   text-align: center;
@@ -410,10 +437,12 @@ h2.subtitle {
 }
 
 .fotoFundadores h2 {
-  margin-top: 15px; /* Ou ajuste como quiser */
+  margin-top: 15px; 
   color:#e3e9f7;
   text-align: center;
 }
+
+/* Parte da Equipe */
 
 .funcionarios {
   display: flex;
@@ -440,11 +469,7 @@ h2.subtitle {
     font-size:1.2rem;
 }
 
-.red { background: #e74c3c; }
-.orange { background: #e67e22; }
-.blue { background: #2980b9; }
-.green { background: #27ae60; }
-.purple { background: #8e44ad; }
+/* footer */
 
 .footer{
   position: relative;
