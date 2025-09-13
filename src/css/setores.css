@@ -9,7 +9,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     overflow-y: scroll;
-    background-image: url('../images/fundofloresta.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -293,6 +292,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 75vh;
+    background-image: url('../images/fotoDoword.jpg');
+    background-size: cover;       /* cobre toda a área */
+    background-repeat: no-repeat; /* não repete a imagem */
+    background-position: center;  /* centraliza a imagem */
+    border-radius: 12px;          /* bordas arredondadas, opcional */
 }
 
 .slider-container {
@@ -409,6 +413,7 @@ body {
     padding-left: calc(82px + 40px);
     text-align: center;
     background-color: #f5f5f5;
+    margin: 50px;
 }
 
 .linha {
@@ -420,6 +425,9 @@ body {
 .texto {
     max-width: 800px;
     margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 30px;
+    border-radius: 30px;
 }
 
 .texto h2 {
